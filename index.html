@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rose Day Surprise for Ishu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script>
+        const correctPassword = "RosesForIshu2024"; // Password for access
+        let enteredPassword = prompt("विशेष पासवर्ड दर्ज करें:");
+        if (enteredPassword !== correctPassword) {
+            alert("गलत पासवर्ड। प्रवेश निषेधित।");
+            window.location.href = "https://www.google.com";
+        }
+    </script>
+    <div class="hero">
+        <h1>Happy Rose Day, Ishu! 🌹</h1>
+        <p>From Vaibhav, with all my love. दूरियां हमें अलग नहीं कर सकतीं।</p>
+        <button onclick="showSurprise()">Play Surprise</button>
+    </div>
+    <div id="surprise" class="surprise" style="display:none;">
+        <h2>Your Images</h2>
+        <div class="gallery">
+            <img src="assets/images/ishu1.jpg" alt="Ishu">
+            <img src="assets/images/ishu2.jpg" alt="Ishu">
+            <!-- Add more images -->
+        </div>
+        <h2>My Video Message</h2>
+        <video controls width="100%" max-width="400px">
+            <source src="assets/videos/message.mp4" type="video/mp4">
+        </video>
+        <h2>Song for You</h2>
+        <audio controls>
+            <source src="assets/audio/romantic-song.mp3" type="audio/mpeg">
+        </audio>
+        <h2>Beautiful Lines from My Heart</h2>
+        <p>दूरियां हमें अलग नहीं कर सकतीं, क्योंकि हमारी प्यार की जड़ें गहरी हैं।<br>
+        एक दिन मिलेंगे, और तब सब कुछ सच्चा हो जाएगा।<br>
+        तुम मेरी दुनिया हो, Ishu – Vaibhav.</p>
+        <div class="roses">🌹🌹🌹 Roses for you! 🌹🌹🌹</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
