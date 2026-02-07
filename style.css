@@ -1,0 +1,38 @@
+body {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    background: linear-gradient(to bottom, #ffcccc, #ff9999);
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.hero {
+    padding: 50px;
+}
+button {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.surprise {
+    padding: 20px;
+}
+.gallery img {
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.roses {
+    font-size: 2em;
+    animation: fall 3s infinite;
+}
+@keyframes fall {
+    0% { transform: translateY(-100px); }
+    100% { transform: translateY(0); }
+}
+@media (max-width: 600px) {
+    .gallery img { width: 150px; }
+}
